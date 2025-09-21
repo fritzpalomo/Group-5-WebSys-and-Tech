@@ -1,0 +1,82 @@
+:root {
+  --clr-primary: #FF6B6B;
+  --clr-secondary: #4FD1C5;
+  --clr-bg: #0F1724;
+  --clr-card: #0B1220;
+  --clr-muted: #94A3B8;
+  --clr-text: #F8FAFC;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; }
+
+body {
+  font-family: 'Inter', sans-serif;
+  background: var(--clr-bg);
+  color: var(--clr-text);
+  line-height: 1.6;
+  padding: 20px;
+}
+
+h1, h2, h3 {
+  font-family: 'Poppins', sans-serif;
+  color: var(--clr-primary);
+}
+
+a { color: var(--clr-secondary); text-decoration: none; }
+a:hover { color: var(--clr-primary); }
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+header .brand { display: flex; align-items: center; gap: 10px; }
+header .logo { width: 40px; height: 40px; }
+header nav a { margin: 0 10px; }
+header nav a.active { color: var(--clr-primary); font-weight: bold; }
+
+.hero {
+  text-align: center;
+  padding: 40px 20px;
+  background: var(--clr-card);
+  border-radius: 12px;
+  margin-bottom: 20px;
+}
+
+.card {
+  background: var(--clr-card);
+  border-radius: 12px;
+  padding: 20px;
+  margin: 10px 0;
+}
+
+.muted { color: var(--clr-muted); }
+
+.btn {
+  display: inline-block;
+  padding: 10px 16px;
+  border-radius: 8px;
+  font-weight: 600;
+  border: none;
+  cursor: pointer;
+  margin: 4px;
+}
+
+.btn-primary {
+  background: linear-gradient(90deg, var(--clr-primary), var(--clr-secondary));
+  color: #051219;
+}
+
+.btn-ghost {
+  border: 1px solid var(--clr-muted);
+  color: var(--clr-text);
+  background: transparent;
+}
+
+footer {
+  margin-top: 40px;
+  text-align: center;
+  font-size: 0.9rem;
+  color: var(--clr-muted);
+}
