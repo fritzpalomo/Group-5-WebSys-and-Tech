@@ -1,10 +1,8 @@
 :root {
-  --clr-primary: #FF6B6B;     /* Brand accent */
-  --clr-secondary: #4FD1C5;   /* Teal accent */
-  --clr-bg: #0F1724;          /* Dark background */
-  --clr-card: #0B1220;        /* Section/card background */
-  --clr-muted: #94A3B8;       /* Muted text */
-  --clr-text: #F8FAFC;        /* Primary text */
+  --clr-dark: #000000;     /* Black - main dark */
+  --clr-light: #FFFFFF;    /* White - text / background */
+  --clr-accent: #D8FF1C;   /* Neon yellow-green accent */
+  --clr-neutral: #F4F4F4;  /* Light gray background */
 }
 
 * { box-sizing: border-box; margin: 0; padding: 0; }
@@ -80,3 +78,4 @@ footer {
   font-size: 0.9rem;
   color: var(--clr-muted);
 }
+
